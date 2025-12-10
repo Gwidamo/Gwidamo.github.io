@@ -1,0 +1,81 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Wanderer above the Sea of Fog – full screen */
+.background {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpg') center/cover no-repeat fixed;
+    z-index: -2;
+}
+
+/* Dark overlay for perfect text readability */
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hero */
+.hero h1 { font-size: 3.2rem; margin: 20px 0; }
+.hero p { font-size: 1.4rem; margin-bottom: 30px; }
+.hero-gif { max-width: 90%; height: auto; border-radius: 12px; margin: 20px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+
+.divider { width: 80%; margin: 40px auto; display: block; }
+
+/* Sections */
+h2, h3 { margin: 30px 0 20px; }
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; color: #a0d8ef; }
+h3 { font-size: 1.6rem; }
+
+.about ul { list-style: none; font-size: 1.2rem; }
+.about li { margin: 12px 0; }
+.about a { color: #87ceeb; text-decoration: underline; }
+
+.badges { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 12px; 
+    justify-content: center; 
+    margin: 20px 0;
+}
+.badges img { height: 34px; transition: transform .2s; }
+.badges img:hover { transform: scale(1.1); }
+
+.tech h1 img { vertical-align: middle; margin-left: 10px; }
+
+/* Snake */
+.snake img { max-width: 100%; border-radius: 12px; }
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding: 30px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1.2rem; }
+    h1 { font-size: 2.2rem; }
+}
